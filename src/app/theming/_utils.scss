@@ -1,0 +1,14 @@
+@mixin flex-container($justify, $align) {
+  display: flex;
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+}
+
+@mixin reset-ways() {
+  outline: none;
+  border: none;
+}

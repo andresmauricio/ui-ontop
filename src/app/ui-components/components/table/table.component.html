@@ -1,0 +1,93 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Contractor name</th>
+      <th>Type</th>
+      <th>Start date</th>
+      <th>Amount</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Contractor name">
+        <div class="table__people-container">
+          <img src="../assets/people-3.png" alt="" />
+          <span>Darlene Robertson</span>
+        </div>
+      </td>
+      <td data-label="Type">Traditional</td>
+      <td data-label="Start date">Mar 4, 2021</td>
+      <td data-label="Amount">$200 USD</td>
+      <td data-label="Status">
+        <div class="table__status-active">Active</div>
+      </td>
+      <td data-label="Actions">
+        <i
+          class="fa-solid fa-ellipsis-vertical"
+          (mousedown)="showMenu($event)"
+        ></i>
+      </td>
+    </tr>
+    <tr>
+      <td data-label="Contractor name">
+        <div class="table__people-container">
+          <img src="../assets/people-1.png" alt="" />
+          <span>Darlene Robertson</span>
+        </div>
+      </td>
+      <td data-label="Type">Traditional</td>
+      <td data-label="Start date">Mar 4, 2021</td>
+      <td data-label="Amount">$200 USD</td>
+      <td data-label="Status">
+        <div class="table__status-active">Active</div>
+      </td>
+      <td data-label="Actions">
+        <i
+          class="fa-solid fa-ellipsis-vertical"
+          (mousedown)="showMenu($event)"
+        ></i>
+      </td>
+    </tr>
+    <tr>
+      <td data-label="Contractor name">
+        <div class="table__people-container">
+          <img src="../assets/people-2.png" alt="" />
+          <span>Darlene Robertson</span>
+        </div>
+      </td>
+      <td data-label="Type">Traditional</td>
+      <td data-label="Start date">Mar 4, 2021</td>
+      <td data-label="Amount">$200 USD</td>
+      <td data-label="Status">
+        <div class="table__status-pending">Signature pending</div>
+      </td>
+      <td data-label="Actions">
+        <i
+          class="fa-solid fa-ellipsis-vertical"
+          (mousedown)="showMenu($event)"
+        ></i>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="menu" #menuElement>
+  <div>
+    <i class="fa-solid fa-pen"></i>
+    <span>Edit</span>
+  </div>
+  <div>
+    <i class="fa-solid fa-signature"></i>
+    <span>Sign</span>
+  </div>
+  <div>
+    <i class="fa-solid fa-file-contract"></i>
+    <span>View summary</span>
+  </div>
+  <div>
+    <i class="fa-solid fa-trash"></i>
+    <span>Delete</span>
+  </div>
+</div>

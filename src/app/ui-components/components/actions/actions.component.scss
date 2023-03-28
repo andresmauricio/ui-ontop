@@ -1,0 +1,94 @@
+@import '../../../theming/_palette.scss';
+@import '../../../theming/utils.scss';
+@import '../../../theming/varibles.scss';
+
+.actions__container{
+  @include flex-container(false, false);
+  flex-wrap: wrap;
+  gap: 1%;
+  row-gap: 20px;
+  &-filter {
+    width: 10%;
+  }
+  &-new{
+    width: 20%;
+  }
+  &-date, &-contract, &-contractor{
+    width: 25.6%;
+  }
+  &-status{
+    width: 20%;
+  }
+}
+
+
+
+.search-container {
+  position: relative;
+  width: 68%;
+  .search-icon {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.search-input {
+  @include reset-ways();
+  border: 0.5px solid $grey-800;
+  height: 58px;
+  width: 100%;
+  border-radius: $radius;
+  padding-left: 60px;
+  &::placeholder {
+    font-size: 16px;
+    color: $grey-300;
+  }
+}
+
+.input {
+  @include reset-ways();
+  padding-left: 20px;
+  width: 100%;
+  height: 40px;
+  background: $background-paper;
+  box-shadow: 0px 4px 15px $box-shadow;
+  border-radius: $radius;
+  color: $grey;
+  &::placeholder{
+  color: $grey;
+ }
+}
+
+select {
+  @include reset-ways();
+  background: $background-paper;
+  box-shadow: 0px 4px 15px $box-shadow;
+  border-radius: $radius;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  color: $grey;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%;
+  }
+  .actions__container {
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 20px;
+    &-filter {
+      width: 30%;
+    }
+    &-new{
+      width: 60%;
+    }
+    &-date, &-contract, &-contractor, &-status {
+      width: 80%;
+    }
+
+  }
+}

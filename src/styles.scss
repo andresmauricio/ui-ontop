@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/theming/_palette';
+@import './app/theming/_button';
+
+@font-face {
+  font-family: Aileron;
+  src: url(assets/fonts/aileron/Aileron-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: Aileron;
+  font-weight: bold;
+  src: url(assets/fonts/aileron/Aileron-Bold.otf) format("opentype");
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-default;
+  font-family: 'Aileron';
+}
